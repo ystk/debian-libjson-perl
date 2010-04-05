@@ -1,0 +1,13 @@
+libjson-perl (2.04-1) unstable; urgency=low
+
+    CAUTION: There are many differences between version 2 and 1.xx
+
+    Applications using libjson-perl will need to be updated.
+
+    See "INCOMPATIBLE CHANGES TO OLD VERSION" and "TIPS" in the manpage or
+    http://search.cpan.org/dist/JSON/lib/JSON.pm#INCOMPATIBLE_CHANGES_TO_OLD_VERSION
+    and
+    http://search.cpan.org/dist/JSON/lib/JSON.pm#TIPS
+
+ -- Ivan Kohler <ivan-debian@420.am>  Wed, 16 Jan 2008 14:48:40 -0800
+

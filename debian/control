@@ -1,0 +1,25 @@
+Source: libjson-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 7)
+Build-Depends-Indep: libjson-xs-perl (>= 2.270), libtest-pod-perl (>= 1.00),
+ perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Angel Abad <angelabad@gmail.com>, Ivan Kohler <ivan-debian@420.am>,
+ Ansgar Burchardt <ansgar@43-1.org>, Nathan Handler <nhandler@ubuntu.com>,
+ Krzysztof Krzyżaniak (eloy) <eloy@debian.org>,
+ gregor herrmann <gregoa@debian.org>
+Standards-Version: 3.8.4
+Homepage: http://search.cpan.org/dist/JSON/
+Vcs-Svn: svn://svn.debian.org/pkg-perl/trunk/libjson-perl/
+Vcs-Browser: http://svn.debian.org/viewsvn/pkg-perl/trunk/libjson-perl/
+
+Package: libjson-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Recommends: libjson-xs-perl (>= 2.270)
+Description: Perl module to parse and convert to JSON
+ This module converts JSON (JavaScript Object Notation) and Perl
+ data structures into each other.
+ .
+ For information about JSON, see http://www.crockford.com/JSON/.

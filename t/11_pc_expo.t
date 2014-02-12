@@ -5,7 +5,7 @@ use Test::More;
 use strict;
 BEGIN { plan tests => 8 };
 
-BEGIN { $ENV{PERL_JSON_BACKEND} = 0; }
+BEGIN { $ENV{PERL_JSON_BACKEND} = "JSON::backportPP"; }
 
 use JSON;
 
@@ -39,9 +39,9 @@ else {
 
 
 
-$js  = q|[1.01e+30]|;
+$js  = q|[1.01e+67]|; # 30 -> 67 ... patched by H.Merijn Brand
 $obj = $pc->decode($js);
-is($obj->[0], 1.01e+30, 'digit 1.01e+30');
+is($obj->[0], 1.01e+67, 'digit 1.01e+67');
 $js = $pc->encode($obj);
-like($js,qr/\[1.01[Ee]\+0?30\]/, 'digit 1.01e+30');
+like($js,qr/\[1.01[Ee]\+0?67\]/, 'digit 1.01e+67');
 

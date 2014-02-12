@@ -1,3 +1,61 @@
+libjson-perl (2.53-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/copyright: Update copyright years
+  * Bump Standards-Version to 3.9.2 (no changes)
+
+ -- Angel Abad <angelabad@gmail.com>  Mon, 23 May 2011 15:22:51 +0200
+
+libjson-perl (2.51-1) unstable; urgency=low
+
+  * New upstream release
+    + Updates bundled PP implementation to 2.27105
+  * Bump debhelper compat to 8
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Wed, 09 Mar 2011 19:52:29 -0500
+
+libjson-perl (2.50-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Rewrite control description
+  * Add myself to Uploaders and Copyright
+  * Provide NEWS for the upstream change to JSON::backportPP
+  * Package now Suggests installation of libjson-pp-perl
+
+  [ gregor herrmann ]
+  * Remove version from libtest-pod-perl build dependency, already satisfied
+    before etch.
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Sat, 26 Feb 2011 10:12:38 -0500
+
+libjson-perl (2.27-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * Update my email address.
+
+  [ Angel Abad ]
+  * New upstream release
+  * debian/copyright: Update license information
+
+ -- Angel Abad <angelabad@gmail.com>  Tue, 02 Nov 2010 15:29:32 +0100
+
+libjson-perl (2.26-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/copyright: Update license information
+  * debian/libjson-perl.examples: Add example files
+
+ -- Angel Abad <angelabad@gmail.com>  Tue, 28 Sep 2010 21:48:33 +0200
+
+libjson-perl (2.22-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright: update license stanzas.
+  * Set Standards-Version to 3.9.1 (no changes).
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 28 Aug 2010 16:23:32 +0200
+
 libjson-perl (2.21-1) unstable; urgency=low
 
   * New upstream release

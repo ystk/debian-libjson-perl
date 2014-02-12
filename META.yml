@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               JSON
-version:            2.21
+version:            2.53
 abstract:           JSON (JavaScript Object Notation) encoder/decoder
 author:
     - Makamaka Hannyaharamitu, E<lt>makamaka[at]cpan.orgE<gt>
@@ -18,7 +18,7 @@ no_index:
     directory:
         - t
         - inc
-generated_by:       ExtUtils::MakeMaker version 6.54
+generated_by:       ExtUtils::MakeMaker version 6.56
 meta-spec:
     url:      http://module-build.sourceforge.net/META-spec-v1.4.html
     version:  1.4

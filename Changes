@@ -13,8 +13,72 @@ In this version, JSON was totally rewritten.
 
 ##########################################################################
 
- !! Since 2.16, PP's relaxed option caused an infinite loop in some condition.
- !! Recommend to update old versions.
+--------------------------------------------------------------------------
+JSON::PP was inculded in JSON distribution (CPAN module).
+It comes to be a perl core module in Perl 5.14.
+And JSON::PP well be split away it.
+
+JSON distribution will inculde yet another JSON::PP modules.
+They are JSNO::backportPP. So JSON.pm should work as it did at all!
+--------------------------------------------------------------------------
+
+2.53  Sun May 22 16:11:05 2011
+	- made Makefile.PL skipping a installing XS question
+            when set $ENV{PERL_ONLY} or $ENV{NO_XS} (rt#66820)
+
+2.52  Sun May 22 15:05:49 2011
+	- fixed to_json (pointed and patched by mmcleric in rt#68359)
+	- backport JSON::PP 2.27200
+            * fixed incr_parse docodeing string more correctly (rt#68032 by LCONS)
+
+2.51  Tue Mar  8 16:03:34 2011
+	- import JSON::PP 2.27105 as BackportPP
+	- fixed documentations (pointed by Britton Kerin and rt#64738)
+
+2.50  Mon Dec 20 14:56:42 2010
+	[JSON]
+	- stable release
+
+2.49_01  Sat Nov 27 22:03:17 2010
+	[JSON]
+	- JSON::PP is split away JSON distributino for perl 5.14
+	- JSON::backportPP is included in instead.
+
+2.27  Sun Oct 31 20:32:46 2010
+	[JSON::PP]
+	- Some optimizations (gfx)
+	[JSON::PP::5005]
+	- added missing B module varibales (makamaka)
+
+2.26  Tue Sep 28 17:41:37 2010
+	[JSON::PP]
+	- cleaned up code and enhanced sort option efficiency in encode.
+
+2.25  Tue Sep 28 16:47:08 2010
+	[JSON]
+	- JSON::Backend::XS::Supportable always executed a needless process
+	    with JSON::XS backend. This made encode/decode a bit slower.
+
+2.24  Mon Sep 27 10:56:24 2010
+	[JSON::PP]
+	- tweaked code.
+	- optimized code in hash object encoding.
+
+2.23  Sun Sep 26 22:08:12 2010
+	[JSON::PP]
+	- modified tied object handling in encode. it made encoding speed faster.
+	    pointed by https://rt.cpan.org/Ticket/Display.html?id=61604
+	- modified t/e10_bignum.t
+            for avoiding a warning in using Math::BigInt dev version
+
+2.22  Wed Aug 25 12:46:13 2010
+	[JSON]
+	- added JSON::XS installing feature in Makefile.PL
+	    with cpan or cpanm (some points suggested by gfx)
+	- check that to_json and from_json are not called as methods (CHORNY)
+	[JSON::PP]
+	- modified for -Duse64bitall -Duselongdouble compiled perl.
+	    11_pc_expo.t too. (these are patched by H.Merijn Brand)
 
 2.21  Mon Apr  5 14:56:52 2010
 	[JSON]

@@ -1,3 +1,61 @@
+libjson-perl (2.61-1) unstable; urgency=low
+
+  * Team upload
+
+  * Imported Upstream version 2.61
+    + fixes ->is_xs and ->is_pp methods
+
+ -- Damyan Ivanov <dmn@debian.org>  Sat, 19 Oct 2013 22:04:34 +0300
+
+libjson-perl (2.59-1) unstable; urgency=low
+
+  [ Xavier Guimard ]
+  * Imported Upstream version 2.59
+
+  [ gregor herrmann ]
+  * Make build depencency / recommendation on libjson-xs-perl versioned.
+  * Update years of packaging copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 28 Jun 2013 15:49:16 +0200
+
+libjson-perl (2.58-1) unstable; urgency=low
+
+  * Imported Upstream version 2.58
+
+ -- Xavier Guimard <x.guimard@free.fr>  Sat, 25 May 2013 08:20:47 +0200
+
+libjson-perl (2.57-1) unstable; urgency=low
+
+  * Imported Upstream version 2.57
+  * Update debian/copyright years
+
+ -- Xavier Guimard <x.guimard@free.fr>  Sun, 14 Apr 2013 06:49:06 +0200
+
+libjson-perl (2.53-2) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Angel Abad ]
+  * Email change: Angel Abad -> angel@debian.org
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Nathan Handler ]
+  * Email change: Nathan Handler -> nhandler@debian.org
+
+  [ Xavier Guimard ]
+  * Update debian/copyright (years and format)
+  * Bump Standards-Version to 3.9.4
+  * Replace libjson-pp-perl by "perl (>= 5.13.9) | libjson-pp-perl" in
+    suggests
+
+  [ Salvatore Bonaccorso ]
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+ -- Xavier Guimard <x.guimard@free.fr>  Sat, 26 Jan 2013 12:51:44 +0100
+
 libjson-perl (2.53-1) unstable; urgency=low
 
   * New upstream release

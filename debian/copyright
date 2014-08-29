@@ -1,20 +1,21 @@
-Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=135
-Maintainer: Makamaka Hannyaharamitu <makamaka@cpan.org>
-Source: http://search.cpan.org/dist/JSON/
-Name: JSON
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: JSON
+Source: https://metacpan.org/release/JSON/
+Upstream-Contact: Makamaka Hannyaharamitu, <makamaka[at]cpan.org>
 
 Files: *
-Copyright: 2005-2011, Makamaka Hannyaharamitu <makamaka@cpan.org>
+Copyright: 2005-2013, Makamaka Hannyaharamitu <makamaka@cpan.org>
 License: Artistic or GPL-1+
 
 Files: debian/*
 Copyright: 2005-2008, Ivan Kohler <ivan-debian@420.am>
- 2008-2011, Angel Abad <angelabad@gmail.com>
- 2009, Ansgar Burchardt <ansgar@debian.org>
- 2009, Nathan Handler <nhandler@ubuntu.com>
+ 2008-2011, Angel Abad <angel@debian.org>
+ 2009-2011, Ansgar Burchardt <ansgar@debian.org>
+ 2009, Nathan Handler <nhandler@debian.org>
  2010, Krzysztof Krzyżaniak (eloy) <eloy@debian.org>
- 2010, gregor herrmann <gregoa@debian.org>
+ 2010-2013, gregor herrmann <gregoa@debian.org>
  2011, Jonathan Yu <jawnsy@cpan.org>
+ 2013, Xavier Guimard <x.guimard@free.fr>
 License: Artistic or GPL-1+
 
 License: Artistic

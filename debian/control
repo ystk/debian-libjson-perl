@@ -1,28 +1,30 @@
 Source: libjson-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Angel Abad <angel@debian.org>,
+           Ivan Kohler <ivan-debian@420.am>,
+           Ansgar Burchardt <ansgar@debian.org>,
+           Nathan Handler <nhandler@debian.org>,
+           Krzysztof Krzyżaniak (eloy) <eloy@debian.org>,
+           Jonathan Yu <jawnsy@cpan.org>,
+           gregor herrmann <gregoa@debian.org>,
+           Xavier Guimard <x.guimard@free.fr>
 Section: perl
 Priority: optional
 Build-Depends: debhelper (>= 8)
-Build-Depends-Indep: libjson-xs-perl (>= 2.270),
- libtest-pod-perl,
- perl
-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
-Uploaders: Angel Abad <angelabad@gmail.com>,
- Ivan Kohler <ivan-debian@420.am>,
- Ansgar Burchardt <ansgar@debian.org>,
- Nathan Handler <nhandler@ubuntu.com>,
- Krzysztof Krzyżaniak (eloy) <eloy@debian.org>,
- Jonathan Yu <jawnsy@cpan.org>,
- gregor herrmann <gregoa@debian.org>
-Standards-Version: 3.9.2
-Homepage: http://search.cpan.org/dist/JSON/
-Vcs-Svn: svn://svn.debian.org/pkg-perl/trunk/libjson-perl/
-Vcs-Browser: http://svn.debian.org/viewsvn/pkg-perl/trunk/libjson-perl/
+Build-Depends-Indep: libjson-xs-perl (>= 2.340),
+                     libtest-pod-perl,
+                     perl
+Standards-Version: 3.9.4
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-perl/packages/libjson-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libjson-perl.git
+Homepage: https://metacpan.org/release/JSON/
 
 Package: libjson-perl
 Architecture: all
-Depends: ${misc:Depends}, ${perl:Depends}
-Recommends: libjson-xs-perl (>= 2.270)
-Suggests: libjson-pp-perl
+Depends: ${misc:Depends},
+         ${perl:Depends}
+Recommends: libjson-xs-perl (>= 2.340)
+Suggests: perl (>= 5.13.9) | libjson-pp-perl
 Description: module for manipulating JSON-formatted data
  JSON is a Perl module for manipulating data stored in the format of the same
  name. JavaScript Object Notation (JSON) is a simple data serialization format
@@ -32,3 +34,4 @@ Description: module for manipulating JSON-formatted data
  implementation. It prefers either JSON::XS (see libjson-xs-perl) or JSON::PP
  (see libjson-pp-perl), but will fall back on a backport implementation if
  neither are available.
+

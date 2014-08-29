@@ -13,10 +13,12 @@ use JSON;
 
 if ( $] >= 5.006 ) {
 
-eval <<'TEST';
+eval <<'TEST' or die "Failed to eval test code for version $]: $@";
 
 sub splitter {
    my ($coder, $text) = @_;
+
+   $coder->canonical(1) if $] >= 5.017009;
 
    for (0 .. length $text) {
       my $a = substr $text, 0, $_;
@@ -27,7 +29,7 @@ sub splitter {
 
       my $data = $coder->incr_parse;
       ok ($data);
-      ok ($coder->encode ($data) eq $coder->encode ($coder->decode ($text)), "data");
+      is ($coder->encode ($data), $coder->encode ($coder->decode ($text)), "data");
       ok ($coder->incr_text =~ /^\s*$/, "tailws");
    }
 }
@@ -78,13 +80,12 @@ splitter +JSON->new->allow_nonref, ' "5" ';
 
 TEST
 
-print $@;
 
 }
 else {
 
 
-eval <<'TEST';
+eval <<'TEST' or die "Failed to eval test code for version $]: $@";
 
 my $incr_text;
 
@@ -147,8 +148,6 @@ splitter +JSON->new->allow_nonref, ' "5" ';
 
 
 TEST
-
-print $@;
 
 } # for 5.005
 
